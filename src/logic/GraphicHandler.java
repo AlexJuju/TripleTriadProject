@@ -5,20 +5,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class GraphicHandler {
 
     private static Controller loadedController;
 
-    public static Scene getScene( int screen ) {
+    public static Scene getScene( int resource ) {
 
-        String path = ResourcesHandler.getPath( screen );
+        String path = ResourcesHandler.getPath( resource );
         Parent root = null;
         try {
-            FileInputStream inputStream = new FileInputStream( path );
+            InputStream inputStream = GraphicHandler.class.getResourceAsStream( path );
             FXMLLoader loader = new FXMLLoader();
 
             root = loader.load( inputStream );
