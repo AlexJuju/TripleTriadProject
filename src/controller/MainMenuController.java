@@ -33,6 +33,11 @@ public class MainMenuController implements Controller {
     }
 
     @FXML
+    void openGuide(ActionEvent event) {
+        Game.openGuide();
+    }
+
+    @FXML
     void openSetting(ActionEvent event) {
         Game.openSetting();
     }

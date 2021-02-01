@@ -10,6 +10,9 @@ public class Game {
     public static void openGlossary() {
     }
 
+    public static void openGuide() {
+    }
+
     public static void openSetting() {
     }
 
@@ -17,4 +20,5 @@ public class Game {
     public static boolean isDuelAvailable() {
         return false;
     }
+
 }
