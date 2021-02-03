@@ -3,7 +3,6 @@ package logic;
 import controller.Controller;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +11,7 @@ public class GraphicHandler {
 
     private static Controller loadedController;
 
-    public static Scene getScene( int resource ) {
+    public static Parent loadResource ( int resource ) {
 
         String path = ResourcesHandler.getPath( resource );
         Parent root = null;
@@ -28,10 +27,10 @@ public class GraphicHandler {
 
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println( "GraphicHandler: Error loading given screen path -> " + path );
+            System.out.println( "GraphicHandler: Error loading given resource path -> " + path );
         }
 
-        return new Scene( root );
+        return  root;
     }
 
     public static Controller getLoadedController () {

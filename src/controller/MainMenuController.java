@@ -44,7 +44,7 @@ public class MainMenuController implements Controller {
 
     @FXML
     void buttonSelected(MouseEvent event) {
-        System.out.println( "Stampa prova.");
+        System.out.println( "Play selected button effect.");
     }
 
 

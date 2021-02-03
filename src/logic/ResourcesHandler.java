@@ -13,6 +13,9 @@ public class ResourcesHandler {
             case Resource.MAIN_MENU_SCREEN:
                 file = "MainMenu.fxml";
                 break;
+            case Resource.CARD_MODEL:
+                file = "CardModel.fxml";
+                break;
 
             default:
                 System.out.println("ResourcesHandler: Resource not found.");

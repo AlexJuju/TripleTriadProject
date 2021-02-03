@@ -2,6 +2,7 @@ package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class CardController implements Controller{
@@ -16,9 +17,20 @@ public class CardController implements Controller{
     private Label botNumber;
 
     @FXML
-    private ImageView imageArea;
+    private Label rightNumber;
 
     @FXML
-    private Label rightNumber;
+    private ImageView imageArea;
+
+    public void setCardNumbers ( int top, int bot, int left, int right ) {
+        topNumber.setText(String.valueOf(top));
+        botNumber.setText(String.valueOf(bot));
+        leftNumber.setText(String.valueOf(left));
+        rightNumber.setText(String.valueOf(right));
+    }
+
+    public void setImageArea ( Image img ) {
+        imageArea.setImage(img);
+    }
 
 }
