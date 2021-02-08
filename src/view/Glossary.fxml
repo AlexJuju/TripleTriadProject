@@ -34,7 +34,7 @@
                                  <children>
                                     <AnchorPane>
                                        <children>
-                                          <Button mnemonicParsing="false" onAction="#previousScreen" text="Indietro" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                          <Button mnemonicParsing="false" onAction="#previousScreen" onMouseEntered="#buttonSelected" text="Indietro" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor>
