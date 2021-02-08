@@ -3,6 +3,7 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.FlowPane;
+import logic.Game;
 
 public class GlossaryController implements Controller {
 
@@ -11,7 +12,7 @@ public class GlossaryController implements Controller {
 
     @FXML
     void previousScreen(ActionEvent event) {
-
+        Game.backToMainMenu();
     }
 
 }
