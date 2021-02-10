@@ -18,8 +18,8 @@ public class GlossaryController implements Controller {
 
     public void initialize() {
 
-        File file = new File("resources/seed.jpg");
-        Image image = new Image(file.toURI().toString());
+        //File file = new File("resources/seed.jpg");
+        Image image = new Image("resources/seed.jpg" );
         System.out.println( image );
 
         Card cartaprova = new Card( 3, 4,2, 6, image);

@@ -31,6 +31,7 @@ public class CardController implements Controller{
 
     public void setImageArea ( Image img ) {
         imageArea.setImage(img);
+        System.out.println("image set");
     }
 
 }
